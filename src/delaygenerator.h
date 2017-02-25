@@ -7,15 +7,14 @@
 
 
 bool looping;
-int seqlen, startcounter, endcounter;
-uint32_t pulseregend[125];
-uint32_t pulseregstart[125];
-uint32_t starttimes[125];
-uint32_t endtimes[125];
-void triggerFunc(void);
+size_t seqlen, startcounter, endcounter;
+uint32_t pulseregstart[50];
+uint32_t starttimes[50];
+uint32_t endtimes[50][2];
+
 void playSeq(void);
 void loadSeq(void);
 void clearSeq(void);
-void initAutoTrig(void);
+
 
 #endif //DELAYGENERATOR_DELAYGENERATOR_H
