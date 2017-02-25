@@ -66,7 +66,7 @@ void loop() {
 /**
  *  Start the PIT timer when pin 3 receives a rising edge
  *
- *  Note, jitter can be reduced to 100 ns if playSeq() is placed here
+ *  Note, jitter can be reduced to 100 ns if playSeq() is placed here instead of in loop()
  */
 FASTRUN void porta_isr() {
     PORTA_ISFR = PORTA_ISFR; // reset interrupt flag
